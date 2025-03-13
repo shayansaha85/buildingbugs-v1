@@ -35,13 +35,10 @@ A modern building management system for handling tenant requests and maintenance
 
 5. **Setup Admin Account**
    ```bash
-   # Connect to MongoDB
-   mongosh
-
-   # Switch to application database
+   # On MongoDB Shell execute these commands
+   
    use building-management
 
-   # Create admin user
    db.users.insertOne({
      username: "admin",
      password: "admin",
